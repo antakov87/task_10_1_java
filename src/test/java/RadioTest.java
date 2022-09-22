@@ -129,7 +129,7 @@ public class RadioTest {
     @Test
     public void downVolumesFromMin() {
         Radio radio = new Radio();
-        radio.currentVolume = 0;
+        radio.setCurrentVolume(0);
         radio.downVolume();
         int expected = 0;
         int actual = radio.getCurrentVolume();
@@ -139,7 +139,7 @@ public class RadioTest {
     @Test
     public void downVolumesFromMiddle() {
         Radio radio = new Radio();
-        radio.currentVolume = 6;
+        radio.setCurrentVolume(6);
         radio.downVolume();
         int expected = 5;
         int actual = radio.getCurrentVolume();
